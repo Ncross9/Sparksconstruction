@@ -1,387 +1,372 @@
-                                                                        body {
-                                                                            margin: 0;
-                                                                            padding: 0;
-                                                                            height: 100%;
-                                                                        }
-                                                                        
-                                                                        .flex-container {
-                                                                            display: flex;
-                                                                            flex-wrap: wrap;
-                                                                        }
-                                                                        /********************* NAV BAR AND LOGO ************************/
-                                                                        
-                                                                        .nav-container {
-                                                                            display: flex;
-                                                                            justify-content: space-between;
-                                                                            align-items: center;
-                                                                            background: white;
-                                                                            font-family: 'Offside', cursive;
-                                                                            position: fixed;
-                                                                            top: 0;
-                                                                            z-index: 1;
-                                                                        }
-                                                                        
-                                                                        .logo img {
-                                                                            display: flex;
-                                                                            align-self: flex-start;
-                                                                            max-height: 50%;
-                                                                            max-width: 40%;
-                                                                            padding-top: 20px;
-                                                                            padding-bottom: 20px;
-                                                                            padding-left: 20px;
-                                                                        }
-                                                                        
-                                                                        .nav {
-                                                                            display: flex;
-                                                                            list-style-type: none;
-                                                                        }
-                                                                        
-                                                                        .nav a {
-                                                                            display: flex;
-                                                                            justify-content: space-around;
-                                                                            padding: 1.5em;
-                                                                            padding-left: 3em;
-                                                                            padding-right: 3em;
-                                                                            color: #ff7e2d;
-                                                                            text-decoration: none;
-                                                                            align-items: flex-end;
-                                                                            border-radius: 20px;
-                                                                            font-size: 15px;
-                                                                        }
-                                                                        
-                                                                        .nav a:hover {
-                                                                            background: gray;
-                                                                            transition: all .4s ease;
-                                                                        }
-                                                                        /********************* MAIN IMAGE AND INTRO ************************/
-                                                                        
-                                                                        h1 {
-                                                                            position: absolute;
-                                                                            top: 50%;
-                                                                            left: 50%;
-                                                                            transform: translate(-50%, -50%);
-                                                                            font-family: 'Offside', cursive;
-                                                                            font-size: 50px;
-                                                                            animation: fadeIn ease 2s;
-                                                                            color: white;
-                                                                        }
-                                                                        
-                                                                        .carpenter {
-                                                                            overflow: hidden;
-                                                                            width: 100%;
-                                                                            min-height: auto;
-                                                                            max-width: auto;
-                                                                        }
-                                                                        /********************* QUICK FACTS SECTION ************************/
-                                                                        
-                                                                        .container {
-                                                                            display: grid;
-                                                                            justify-items: center;
-                                                                            height: 300px;
-                                                                            grid-template-columns: 1fr 1fr 1fr;
-                                                                            grid-template-rows: auto;
-                                                                            color: #ff7e2d;
-                                                                            position: relative;
-                                                                        }
-                                                                        
-                                                                        .container div {
-                                                                            text-align: center;
-                                                                            padding: 100px;
-                                                                            padding-top: 100px;
-                                                                            width: 200px;
-                                                                            height: 200px;
-                                                                            background: white;
-                                                                            border-radius: 20px;
-                                                                            font-family: 'Offside', cursive;
-                                                                            font-size: xx-large;
-                                                                            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11), 0 8px 16px rgba(0, 0, 0, 0.11);
-                                                                            opacity: 0;
-                                                                        }
-                                                                        /********************* CUSTOMER REVIEWS ************************/
-                                                                        
-                                                                        .real {
-                                                                            font-family: 'Offside', cursive;
-                                                                            color: #ff7e2d;
-                                                                            font-size: xx-large;
-                                                                            writing-mode: horizontal-tb;
-                                                                            display: block;
-                                                                            width: 50%;
-                                                                            padding: 20px;
-                                                                            margin: 8em auto;
-                                                                            border-radius: 20px;
-                                                                            text-align: center;
-                                                                            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11), 0 8px 16px rgba(0, 0, 0, 0.11);
-                                                                        }
-                                                                        
-                                                                        .container-2 {
-                                                                            display: flex;
-                                                                            flex-flow: column;
-                                                                            justify-items: center;
-                                                                            font-size: x-large;
-                                                                            color: #ff7e2d;
-                                                                            text-align: center;
-                                                                            padding: 50px;
-                                                                            position: relative;
-                                                                        }
-                                                                        
-                                                                        .customer {
-                                                                            border: 2px solid #ff7e2d;
-                                                                            border-radius: 20%;
-                                                                            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11), 0 8px 16px rgba(0, 0, 0, 0.11);
-                                                                        }
-                                                                        
-                                                                        .home-item p {
-                                                                            background: #f9f9f9;
-                                                                            font-family: 'Offside', cursive;
-                                                                            border-radius: 50%;
-                                                                            font-size: .8em;
-                                                                            margin: 2em;
-                                                                            margin-bottom: 7em;
-                                                                            padding: 4em;
-                                                                        }
-                                                                        /********************* FOOTER ************************/
-                                                                        
-                                                                        .footer {
-                                                                            background: #f9f9f9;
-                                                                            font-style: bold;
-                                                                            color: #ff7e2d;
-                                                                            font-family: 'Offside', cursive;
-                                                                            font-weight: lighter;
-                                                                            position: relative;
-                                                                            text-align: center;
-                                                                            left: 0px;
-                                                                            bottom: 0px;
-                                                                            height: 50px;
-                                                                            width: 100%;
-                                                                            margin: auto;
-                                                                        }
-                                                                        /********************* SPECIFIC TO CONTACT PAGE ************************/
-                                                                        
-                                                                        .contact-img {
-                                                                            overflow: hidden;
-                                                                            width: 100%;
-                                                                            min-height: auto;
-                                                                            max-height: auto;
-                                                                        }
-                                                                        
-                                                                        .contact-me {
-                                                                            font-family: 'Offside', cursive;
-                                                                            color: #ff7e2d;
-                                                                            font-size: xx-large;
-                                                                            writing-mode: horizontal-tb;
-                                                                            display: block;
-                                                                            width: 50%;
-                                                                            padding: 5em;
-                                                                            margin: 3em auto;
-                                                                            border-radius: 20px;
-                                                                            text-align: center;
-                                                                            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11), 0 8px 16px rgba(0, 0, 0, 0.11);
-                                                                        }
-                                                                        
-                                                                        .email span {
-                                                                            color: black;
-                                                                        }
-                                                                        
-                                                                        .call span {
-                                                                            color: black;
-                                                                        }
-                                                                        /********************* SPECIFIC TO SERVICES PAGE ************************/
-                                                                        
-                                                                        .services-img {
-                                                                            overflow: hidden;
-                                                                            width: 100%;
-                                                                            min-height: auto;
-                                                                            max-height: auto;
-                                                                        }
-                                                                        
-                                                                        .services {
-                                                                            font-family: 'Offside', cursive;
-                                                                            color: #ff7e2d;
-                                                                            font-size: large;
-                                                                            writing-mode: horizontal-tb;
-                                                                            display: block;
-                                                                            width: 50%;
-                                                                            padding: 5em;
-                                                                            margin: 3em auto;
-                                                                            border-radius: 20px;
-                                                                            text-align: center;
-                                                                            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11), 0 8px 16px rgba(0, 0, 0, 0.11);
-                                                                        }
-                                                                        /********************* MEDIA QUERIES ************************/
-                                                                        /* ****** ****** */
-                                                                        
-                                                                        @media screen and (min-width: 375px) and (max-width: 820px) {
-                                                                            .nav-container {
-                                                                                height: 15%;
-                                                                                width: 100%;
-                                                                                display: flex;
-                                                                                align-items: center;
-                                                                                justify-content: center;
-                                                                                background: white;
-                                                                                font-family: 'Offside', cursive;
-                                                                                top: 0;
-                                                                                z-index: 1;
-                                                                                position: absolute;
-                                                                            }
-                                                                            .logo img {
-                                                                                display: block;
-                                                                                float: center;
-                                                                                left: 9%;
-                                                                                max-width: 80%;
-                                                                                height: auto;
-                                                                                position: absolute;
-                                                                                top: 0px;
-                                                                            }
-                                                                            .nav {
-                                                                                list-style-type: none;
-                                                                            }
-                                                                            .nav a {
-                                                                                display: flex;
-                                                                                justify-content: space-around;
-                                                                                padding: 2em;
-                                                                                color: #ff7e2d;
-                                                                                text-decoration: none;
-                                                                                align-items: flex-end;
-                                                                                border-radius: 20px;
-                                                                                font-size: 15px;
-                                                                            }
-                                                                            /************/
-                                                                            .carpenter {
-                                                                                display: block !important;
-                                                                                height: auto;
-                                                                                width: 100%;
-                                                                                position: relative !important;
-                                                                                top: 3.5em !important;
-                                                                            }
-                                                                            /**********/
-                                                                            .container {
-                                                                                display: grid;
-                                                                                justify-items: center;
-                                                                                top: 100px;
-                                                                                height: 50px;
-                                                                                grid-template-columns: 1fr;
-                                                                                grid-template-rows: auto;
-                                                                                grid-template-columns: auto;
-                                                                                gap: 20px;
-                                                                                color: #ff7e2d;
-                                                                                position: relative;
-                                                                            }
-                                                                            .container div {
-                                                                                text-align: center;
-                                                                                padding: 50px;
-                                                                                padding-top: 50px;
-                                                                                width: 200px;
-                                                                                height: 100px;
-                                                                                background: white;
-                                                                                border-radius: 20px;
-                                                                                font-family: 'Offside', cursive;
-                                                                                font-size: large;
-                                                                                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11), 0 8px 16px rgba(0, 0, 0, 0.11);
-                                                                                opacity: 0;
-                                                                            }
-                                                                            /*************/
-                                                                            .real {
-                                                                                font-family: 'Offside', cursive;
-                                                                                color: #ff7e2d;
-                                                                                font-size: xx-large;
-                                                                                writing-mode: horizontal-tb;
-                                                                                display: block;
-                                                                                position: relative;
-                                                                                top: 300px;
-                                                                                width: 50%;
-                                                                                padding: 20px;
-                                                                                margin: 15em auto;
-                                                                                border-radius: 20px;
-                                                                                text-align: center;
-                                                                                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11), 0 8px 16px rgba(0, 0, 0, 0.11);
-                                                                            }
-                                                                            .container-2 {
-                                                                                display: flex;
-                                                                                flex-flow: column;
-                                                                                justify-items: center;
-                                                                                font-size: medium;
-                                                                                color: #ff7e2d;
-                                                                                text-align: center;
-                                                                                padding: 10px;
-                                                                                position: relative;
-                                                                            }
-                                                                            .customer {
-                                                                                border: 2px solid #ff7e2d;
-                                                                                border-radius: 20%;
-                                                                                max-width: 100%;
-                                                                                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11), 0 8px 16px rgba(0, 0, 0, 0.11);
-                                                                            }
-                                                                            .home-item p {
-                                                                                background: #f9f9f9;
-                                                                                font-family: 'Offside', cursive;
-                                                                                border-radius: 50%;
-                                                                                font-size: .8em;
-                                                                                margin: 2em;
-                                                                                margin-bottom: 7em;
-                                                                                padding: 4em;
-                                                                            }
-                                                                            /************/
-                                                                            .services-img {
-                                                                                display: block !important;
-                                                                                height: auto;
-                                                                                width: 100%;
-                                                                                position: relative !important;
-                                                                                top: 3.5em !important;
-                                                                            }
-                                                                            .services {
-                                                                                font-family: 'Offside', cursive;
-                                                                                color: #ff7e2d;
-                                                                                font-size: large;
-                                                                                writing-mode: horizontal-tb;
-                                                                                display: block;
-                                                                                width: 50%;
-                                                                                padding: 5em;
-                                                                                margin: 3em auto;
-                                                                                border-radius: 20px;
-                                                                                text-align: center;
-                                                                                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11), 0 8px 16px rgba(0, 0, 0, 0.11);
-                                                                            }
-                                                                            .intro h1 {
-                                                                                position: absolute;
-                                                                                text-align: center;
-                                                                                top: 15%;
-                                                                                left: 30%;
-                                                                                transform: translate(-20%, -20%) !important;
-                                                                                font-family: 'Offside', cursive !important;
-                                                                                font-size: 50px !important;
-                                                                            }
-                                                                            /***********/
-                                                                            .contact-img {
-                                                                                display: block !important;
-                                                                                height: auto;
-                                                                                width: 100%;
-                                                                                position: relative !important;
-                                                                                top: 3.5em !important;
-                                                                            }
-                                                                            .contact-me {
-                                                                                font-family: 'Offside', cursive;
-                                                                                color: #ff7e2d;
-                                                                                font-size: large;
-                                                                                writing-mode: horizontal-tb;
-                                                                                display: block;
-                                                                                width: 45%;
-                                                                                padding: 5em;
-                                                                                margin: 3em auto;
-                                                                                border-radius: 20px;
-                                                                                text-align: center;
-                                                                                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11), 0 8px 16px rgba(0, 0, 0, 0.11);
-                                                                            }
-                                                                        }
-                                                                        /** ANIMATIONS **/
-                                                                        
-                                                                        @keyframes fadeIn {
-                                                                            0% {
-                                                                                opacity: .2;
-                                                                            }
-                                                                            50% {
-                                                                                opacity: .5;
-                                                                            }
-                                                                            100% {
-                                                                                opacity: 1;
-                                                                            }
-                                                                        }
+ body {
+     margin: 0;
+     padding: 0;
+     height: 100%
+ }
+ 
+ .flex-container {
+     display: flex;
+     flex-wrap: wrap
+ }
+ 
+ .nav-container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background: #fff;
+     font-family: 'Offside', cursive;
+     position: fixed;
+     top: 0;
+     z-index: 1
+ }
+ 
+ .logo img {
+     display: flex;
+     align-self: flex-start;
+     max-height: 50%;
+     max-width: 40%;
+     padding-top: 20px;
+     padding-bottom: 20px;
+     padding-left: 20px
+ }
+ 
+ .nav {
+     display: flex;
+     list-style-type: none
+ }
+ 
+ .nav a {
+     display: flex;
+     justify-content: space-around;
+     padding: 1.5em;
+     padding-left: 3em;
+     padding-right: 3em;
+     color: #ff7e2d;
+     text-decoration: none;
+     align-items: flex-end;
+     border-radius: 20px;
+     font-size: 15px
+ }
+ 
+ .nav a:hover {
+     background: gray;
+     transition: all .4s ease
+ }
+ 
+ h1 {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-family: 'Offside', cursive;
+     font-size: 50px;
+     animation: fadeIn ease 2s;
+     color: #fff
+ }
+ 
+ .carpenter {
+     overflow: hidden;
+     width: 100%;
+     min-height: auto;
+     max-width: auto
+ }
+ 
+ .container {
+     display: grid;
+     justify-items: center;
+     height: 300px;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: auto;
+     color: #ff7e2d;
+     position: relative
+ }
+ 
+ .container div {
+     text-align: center;
+     padding: 100px;
+     padding-top: 100px;
+     width: 200px;
+     height: 200px;
+     background: #fff;
+     border-radius: 20px;
+     font-family: 'Offside', cursive;
+     font-size: xx-large;
+     box-shadow: 0 1px 1px rgba(0, 0, 0, .11), 0 2px 2px rgba(0, 0, 0, .11), 0 4px 4px rgba(0, 0, 0, .11), 0 6px 8px rgba(0, 0, 0, .11), 0 8px 16px rgba(0, 0, 0, .11);
+     opacity: 0
+ }
+ 
+ .real {
+     font-family: 'Offside', cursive;
+     color: #ff7e2d;
+     font-size: xx-large;
+     writing-mode: horizontal-tb;
+     display: block;
+     width: 50%;
+     padding: 20px;
+     margin: 8em auto;
+     border-radius: 20px;
+     text-align: center;
+     box-shadow: 0 1px 1px rgba(0, 0, 0, .11), 0 2px 2px rgba(0, 0, 0, .11), 0 4px 4px rgba(0, 0, 0, .11), 0 6px 8px rgba(0, 0, 0, .11), 0 8px 16px rgba(0, 0, 0, .11)
+ }
+ 
+ .container-2 {
+     display: flex;
+     flex-flow: column;
+     justify-items: center;
+     font-size: x-large;
+     color: #ff7e2d;
+     text-align: center;
+     padding: 50px;
+     position: relative
+ }
+ 
+ .customer {
+     border: 2px solid #ff7e2d;
+     border-radius: 20%;
+     box-shadow: 0 1px 1px rgba(0, 0, 0, .11), 0 2px 2px rgba(0, 0, 0, .11), 0 4px 4px rgba(0, 0, 0, .11), 0 6px 8px rgba(0, 0, 0, .11), 0 8px 16px rgba(0, 0, 0, .11)
+ }
+ 
+ .home-item p {
+     background: #f9f9f9;
+     font-family: 'Offside', cursive;
+     border-radius: 50%;
+     font-size: .8em;
+     margin: 2em;
+     margin-bottom: 7em;
+     padding: 4em
+ }
+ 
+ .footer {
+     background: #f9f9f9;
+     font-style: bold;
+     color: #ff7e2d;
+     font-family: 'Offside', cursive;
+     font-weight: lighter;
+     position: relative;
+     text-align: center;
+     left: 0;
+     bottom: 0;
+     height: 50px;
+     width: 100%;
+     margin: auto
+ }
+ 
+ .contact-img {
+     overflow: hidden;
+     width: 100%;
+     min-height: auto;
+     max-height: auto
+ }
+ 
+ .contact-me {
+     font-family: 'Offside', cursive;
+     color: #ff7e2d;
+     font-size: xx-large;
+     writing-mode: horizontal-tb;
+     display: block;
+     width: 50%;
+     padding: 5em;
+     margin: 3em auto;
+     border-radius: 20px;
+     text-align: center;
+     box-shadow: 0 1px 1px rgba(0, 0, 0, .11), 0 2px 2px rgba(0, 0, 0, .11), 0 4px 4px rgba(0, 0, 0, .11), 0 6px 8px rgba(0, 0, 0, .11), 0 8px 16px rgba(0, 0, 0, .11)
+ }
+ 
+ .email span {
+     color: #000
+ }
+ 
+ .call span {
+     color: #000
+ }
+ 
+ .services-img {
+     overflow: hidden;
+     width: 100%;
+     min-height: auto;
+     max-height: auto
+ }
+ 
+ .services {
+     font-family: 'Offside', cursive;
+     color: #ff7e2d;
+     font-size: large;
+     writing-mode: horizontal-tb;
+     display: block;
+     width: 50%;
+     padding: 5em;
+     margin: 3em auto;
+     border-radius: 20px;
+     text-align: center;
+     box-shadow: 0 1px 1px rgba(0, 0, 0, .11), 0 2px 2px rgba(0, 0, 0, .11), 0 4px 4px rgba(0, 0, 0, .11), 0 6px 8px rgba(0, 0, 0, .11), 0 8px 16px rgba(0, 0, 0, .11)
+ }
+ 
+ @media screen and (min-width:375px) and (max-width:820px) {
+     .nav-container {
+         height: 15%;
+         width: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         background: #fff;
+         font-family: 'Offside', cursive;
+         top: 0;
+         z-index: 1;
+         position: absolute
+     }
+     .logo img {
+         display: block;
+         float: center;
+         left: 9%;
+         max-width: 80%;
+         height: auto;
+         position: absolute;
+         top: 0
+     }
+     .nav {
+         list-style-type: none
+     }
+     .nav a {
+         display: flex;
+         justify-content: space-around;
+         padding: 2em;
+         color: #ff7e2d;
+         text-decoration: none;
+         align-items: flex-end;
+         border-radius: 20px;
+         font-size: 15px
+     }
+     .carpenter {
+         display: block!important;
+         height: auto;
+         width: 100%;
+         position: relative!important;
+         top: 3.5em!important
+     }
+     .container {
+         display: grid;
+         justify-items: center;
+         top: 100px;
+         height: 50px;
+         grid-template-columns: 1fr;
+         grid-template-rows: auto;
+         grid-template-columns: auto;
+         gap: 20px;
+         color: #ff7e2d;
+         position: relative
+     }
+     .container div {
+         text-align: center;
+         padding: 50px;
+         padding-top: 50px;
+         width: 200px;
+         height: 100px;
+         background: #fff;
+         border-radius: 20px;
+         font-family: 'Offside', cursive;
+         font-size: large;
+         box-shadow: 0 1px 1px rgba(0, 0, 0, .11), 0 2px 2px rgba(0, 0, 0, .11), 0 4px 4px rgba(0, 0, 0, .11), 0 6px 8px rgba(0, 0, 0, .11), 0 8px 16px rgba(0, 0, 0, .11);
+         opacity: 0
+     }
+     .real {
+         font-family: 'Offside', cursive;
+         color: #ff7e2d;
+         font-size: xx-large;
+         writing-mode: horizontal-tb;
+         display: block;
+         position: relative;
+         top: 300px;
+         width: 50%;
+         padding: 20px;
+         margin: 15em auto;
+         border-radius: 20px;
+         text-align: center;
+         box-shadow: 0 1px 1px rgba(0, 0, 0, .11), 0 2px 2px rgba(0, 0, 0, .11), 0 4px 4px rgba(0, 0, 0, .11), 0 6px 8px rgba(0, 0, 0, .11), 0 8px 16px rgba(0, 0, 0, .11)
+     }
+     .container-2 {
+         display: flex;
+         flex-flow: column;
+         justify-items: center;
+         font-size: medium;
+         color: #ff7e2d;
+         text-align: center;
+         padding: 10px;
+         position: relative
+     }
+     .customer {
+         border: 2px solid #ff7e2d;
+         border-radius: 20%;
+         max-width: 100%;
+         box-shadow: 0 1px 1px rgba(0, 0, 0, .11), 0 2px 2px rgba(0, 0, 0, .11), 0 4px 4px rgba(0, 0, 0, .11), 0 6px 8px rgba(0, 0, 0, .11), 0 8px 16px rgba(0, 0, 0, .11)
+     }
+     .home-item p {
+         background: #f9f9f9;
+         font-family: 'Offside', cursive;
+         border-radius: 50%;
+         font-size: .8em;
+         margin: 2em;
+         margin-bottom: 7em;
+         padding: 4em
+     }
+     .services-img {
+         display: block!important;
+         height: auto;
+         width: 100%;
+         position: relative!important;
+         top: 3.5em!important
+     }
+     .services {
+         font-family: 'Offside', cursive;
+         color: #ff7e2d;
+         font-size: large;
+         writing-mode: horizontal-tb;
+         display: block;
+         width: 50%;
+         padding: 5em;
+         margin: 3em auto;
+         border-radius: 20px;
+         text-align: center;
+         box-shadow: 0 1px 1px rgba(0, 0, 0, .11), 0 2px 2px rgba(0, 0, 0, .11), 0 4px 4px rgba(0, 0, 0, .11), 0 6px 8px rgba(0, 0, 0, .11), 0 8px 16px rgba(0, 0, 0, .11)
+     }
+     .intro h1 {
+         position: absolute;
+         text-align: center;
+         top: 15%;
+         left: 30%;
+         transform: translate(-20%, -20%)!important;
+         font-family: 'Offside', cursive!important;
+         font-size: 50px!important
+     }
+     .contact-img {
+         display: block!important;
+         height: auto;
+         width: 100%;
+         position: relative!important;
+         top: 3.5em!important
+     }
+     .contact-me {
+         font-family: 'Offside', cursive;
+         color: #ff7e2d;
+         font-size: large;
+         writing-mode: horizontal-tb;
+         display: block;
+         width: 45%;
+         padding: 5em;
+         margin: 3em auto;
+         border-radius: 20px;
+         text-align: center;
+         box-shadow: 0 1px 1px rgba(0, 0, 0, .11), 0 2px 2px rgba(0, 0, 0, .11), 0 4px 4px rgba(0, 0, 0, .11), 0 6px 8px rgba(0, 0, 0, .11), 0 8px 16px rgba(0, 0, 0, .11)
+     }
+ }
+ 
+ @keyframes fadeIn {
+     0% {
+         opacity: .2
+     }
+     50% {
+         opacity: .5
+     }
+     100% {
+         opacity: 1
+     }
+ }
